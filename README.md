@@ -1,2 +1,2 @@
 # KanesPortfolio
-Responsive portfolio website built by and featuring work by Kane Robinson.
+Responsive portfolio website built by and featuring the work of Kane Robinson.
