@@ -3,13 +3,13 @@
 <!-- Note - Consider/Check if head script/links need to be updated -->
 <!-- check netlify for hosting/deployment -->
 
-<!-- Edits: 2020-02-18 -->
-<!-- Change 1 : edited h2 text in the welcome section  -->
-<!-- Change 2 : changed h2 tag to h1 in the welcome section  -->
-<!-- Change 3 : Added a responsive 3 column section with some FontsAwesome icons  -->
-<!-- Change 4 : Added a responsive 2 column section with text - "So What's so Special"   -->
-<!-- Change 5 : manyMe cards with expandable/collapsable button,  myPhilosphy two-column section, connect/social links -->
-<!-- Change 6 : Ready for push - Added footer and copyright section at very bottom - basic layout done and working OK (contains several img & txt placeholders) CSS amendments planned.  -->
+<!-- Edits: 2020-02-19 -->
+<!-- Change 1 : 'mashed' BOX theme into Contact.html & Portfolio.html - links/scripts/etc in <head> & CSS need work -->
+<!-- Change 2 : ##################### -->
+<!-- Change 3 : ##################### -->
+<!-- Change 4 : ##################### -->
+<!-- Change 5 : ##################### -->
+<!-- Change 6 : ##################### -->
 
 <head>
 	<meta charset="utf-8">
@@ -23,8 +23,12 @@
 	<link href="style.css" rel="stylesheet">
 </head>
 
+
+<!-- ####################### START OF BODY ########################## -->
 <body>
-<!--- Navigation -->
+
+
+	<!--- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
 <div class="container-fluid">
 	<a class="navbar-brand" href="#"><img src="img/logo-black.png"></a>
@@ -37,10 +41,10 @@
 				<a class="nav-link" href="#">HOME</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">PORTFOLIO</a>
+				<a class="nav-link" href="Portfolio.html">PORTFOLIO</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">CONTACT ME</a>
+				<a class="nav-link" href="Contact.html">CONTACT ME</a>
 			</li>
 		</ul>
 	</div>
@@ -48,7 +52,7 @@
 </nav>
 
 
-<!--- Image Slider -->
+<!--- IMAGE SLIDER -->
 <div id="slides" class="carousel slide" data-ride="carousel">
 <ul class="carousel-indicators">
 	<li data-target="#slides" data-slide-to="0" class="active"></li>
@@ -57,10 +61,10 @@
 </ul>
 <div class="carousel-inner">
 	<div class="carousel-item active">
-		<img src="img/background.png" alt="Oh what a lovely picture of mountains and it's all pinky, just lovely!">
+		<img src="img/background-big.png" class="center" alt="Oh what a lovely picture of mountains and it's all pinky, just lovely!">
 		<div class="carousel-caption">
-			<h1 class="display-2">Kanes Portfolio</h1>
-			<h3>A journey through space, time, and pure joy.</h3>
+			<h1 class="center display-2">Kanes Portfolio</h1>
+			<h3> A journey through space, time, and pure joy.</h3>
 			<button type="button" class="btn btn-outline-light btn-lg">PORTFOLIO</button>
 			<button type="button" class="btn btn-primary btn-lg">CONTACT ME</button>
 		</div>
@@ -73,18 +77,21 @@
 	</div> -->
 </div>
 </div>
+<!--- IMAGE SLIDER END -->
 
-<!--- Jumbotron -->
+<!--- Jumbotron "This portfolio website is my..." -->
 <div class="container-fluid">
 <div class="row Jumbotron">
-	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-		<p class="lead">This portfolio website is my second weekly homework assignment for Trilogy Coding Bootcamp hosted at the University of Western Australia.</p>
-	</div>
-	<div class="col-sx-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-		<a href="https://bootcamp.uwa.edu.au/coding/landing/?s=Google-Brand&pkw=uwa%20coding%20bootcamp&pcrid=385499530993&pmt=e&utm_source=google&utm_medium=cpc&utm_campaign=%5BS%5D_GRD_Coding_Brand_ALL_Exact&utm_term=uwa%20coding%20bootcamp&utm_content=385499530993&s=google&k=uwa%20coding%20bootcamp&gclid=EAIaIQobChMIlaLeoqDb5wIVRQ4rCh1fmQHtEAAYASAAEgI5ifD_BwE" target="_blank"><button type="button" class="btn btn-outline-secondary btn-lg">UWA Bootcamp</button></a>
-	</div>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+		<p class="lead text-center">This portfolio website is my second weekly homework assignment for Trilogy Coding Bootcamp hosted at the University of Western Australia.</p>
+	</div>	
+</div>
+<div class="col-sx-12">
+	<a href="https://bootcamp.uwa.edu.au/coding/landing/?s=Google-Brand&pkw=uwa%20coding%20bootcamp&pcrid=385499530993&pmt=e&utm_source=google&utm_medium=cpc&utm_campaign=%5BS%5D_GRD_Coding_Brand_ALL_Exact&utm_term=uwa%20coding%20bootcamp&utm_content=385499530993&s=google&k=uwa%20coding%20bootcamp&gclid=EAIaIQobChMIlaLeoqDb5wIVRQ4rCh1fmQHtEAAYASAAEgI5ifD_BwE" target="_blank">
+	<button type="button" class="center btn btn-outline-secondary btn-lg">UWA Bootcamp</button></a>
 </div>
 </div>
+<!--- Jumbotron END -->
 
 <!--- grey breakline -->
 <hr class="light">
@@ -161,8 +168,8 @@
 		<h1 class="display-4">Meet the Many Me's</h1>
 	</div>
 	<!--- Expandable SUMMARY Button - ManyMe's Summary (emoji gifs) -->
-	<button type="button" class="btn btn-outline-dark btn-lg" data-toggle="collapse" data-target="#emoji2">SUMMARY</button>
-	<div id="emoji2" class="collapse">
+	<button class="btn btn-outline-dark btn-lg" type="button" data-toggle="collapse" data-target="#emoji">SUMMARY</button>
+	<div id="emoji" class="collapse">
 	<div class="container-fluid" padding>
 	<div class="row text-center">
 		<div class="col-sm-6 col-md-3">
@@ -242,7 +249,7 @@
 <div class="container-fluid padding">
 <div class="row text-center padding">
 	<div class="col-12">
-		<h2>Connect to my Socials</h2>
+		<h2>Connect with my Socials</h2>
 	</div>
 	<div class="col-12 social padding">
 		<a href="#"><i class="fab fa-facebook"></i></a>
@@ -293,4 +300,5 @@
 </footer>
 </div>
 </body>
+<!-- ####################### END OF BODY ########################## -->
 </html>
