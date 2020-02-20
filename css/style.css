@@ -67,6 +67,10 @@ a {
     text-transform: uppercase;
 }
 
+.h-50 {
+    height: 50px
+}
+
 .h-30 {
     height: 30px
 }
@@ -87,7 +91,6 @@ a {
 h1 {
     color: #393939;
     font-size: 60px;
-    text-transform: uppercase;
 }
 
 h3 {
@@ -901,7 +904,6 @@ footer img {
 
 .top-bar h1 {
     font-size: 60px;
-    text-transform: uppercase;
     font-weight: 700;
     color: #999;
     line-height: 50px;
@@ -1056,6 +1058,7 @@ textarea:focus {
 
 .contact-info {
     margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .contact-info i {
@@ -1073,6 +1076,9 @@ textarea:focus {
 .contact-info p {
     display: inline-block;
     margin-right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-justify: distribute;
 }
 
 .btn-box {

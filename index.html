@@ -6,9 +6,9 @@
 <!-- Note - Consider/Check if head script/links need to be updated -->
 <!-- check netlify for hosting/deployment -->
 
-<!-- Edits: 2020-02-19 -->
-<!-- Change 1 : 'mashed' BOX theme into Contact.html & Portfolio.html - links/scripts/etc in <head> & CSS need work -->
-<!-- Change 2 : ##################### -->
+<!-- Edits: 2020-02-20 -->
+<!-- Change 1 : successfully 'mashed' BOX theme into Contact.html & Portfolio.html -->
+<!-- Change 2 : added video background as header -->
 <!-- Change 3 : ##################### -->
 <!-- Change 4 : ##################### -->
 <!-- Change 5 : ##################### -->
@@ -65,39 +65,28 @@
 </div>
 </nav>
 
-
-<!--- IMAGE SLIDER -->
-<div id="slides" class="carousel slide" data-ride="carousel">
-<ul class="carousel-indicators">
-	<li data-target="#slides" data-slide-to="0" class="active"></li>
-	<li data-target="#slides" data-slide-to="2"></li>
-	<li data-target="#slides" data-slide-to="3"></li>
-</ul>
-<div class="carousel-inner">
-	<div class="carousel-item active">
-		<img src="img/background-big.png" class="center" alt="Oh what a lovely picture of mountains and it's all pinky, just lovely!">
-		<div class="carousel-caption">
-			<h1 class="center display-2">Kanes Portfolio</h1>
-			<h3> a journey through space and time ..and pure joy</h3>
-			<a href="portfolio.html"><button type="button" class="btn btn-outline-light btn-lg">PORTFOLIO</button></a>
-			<a href="contact.html"><button type="button" class="btn btn-primary btn-lg">CONTACT ME</button></a>
-		</div>
-	<!-- </div>
-	<div class="carousel-item">
-		<img src="img/background2.png" alt="">
+<header>
+	<div class="overlay"></div>
+	<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+	  <source src="img/Backyard_4K_Living_Background.mp4" type="video/mp4">
+	</video>
+	<div class="container h-100">
+	<div class="carousel-caption">
+		<h1 class="center display-2">kanes portfolio</h1>
+		<h3> a journey through space and time ..and pure joy</h3>
+		<a href="portfolio.html"><button type="button" class="btn btn-outline-light btn-lg">PORTFOLIO</button></a>
+		<a href="contact.html"><button type="button" class="btn btn-primary btn-lg">CONTACT ME</button></a>
 	</div>
-	<div class="carousel-item">
-		<img src="img/background3.png" alt="">
-	</div> -->
-</div>
-</div>
-<!--- IMAGE SLIDER END -->
+	</div>
+  </header>
+  
+
 
 <!--- Jumbotron "This portfolio website is my..." -->
 <div class="container-fluid">
 <div class="row Jumbotron">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-		<p class="lead text-center">as you can see from the awesome image above<br/>I must be really good</p>
+		<p class="lead text-center">as you can see from the awesome video background above<br/>I must be really good</p>
 	</div>	
 </div>
 <div class="col-sx-12 center-txt">
@@ -155,26 +144,19 @@
 
 <!--- So What's so special? - Two Column Section -->
 <div class="container-fluid">
-<div class="row padding">
-	<div class="col-lg-6">
-		<h2>so what's so special?...</h2>
-		<p>This website is aliive! ..in that it can sense the screen you're viewing it from and adapt acordingly. That's special.</p>
-		<p>In nerd-talk, this website is responsive, meaning the rows and columns that make up the pages will automatically begin re-aranging and dynamically stacking when the screen size sensed hits thresholds of 1200px, 992px, 768px, and 576px for standard mobile.</p>
-		<p>Resize the browser window to see the effect. Responsive web design has become more important as the amount of mobile traffic now accounts for the majority of total internet traffic.</p>
-		
-
-		<br>
-
-		<a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" class="btn btn-outline-light btn-lg">WHAT IS RESPONSIVE?</a>
-	</div>
-	<div class="col-lg-6">
-		<img src="img/responsive.png" alt="Woman pretending to code" class="img-fluid">
+	<div class="row padding">
+		<div class="center-vert col-lg-6">
+			<h2>so what's so special?...</h2>
+			<p>This website is aliive! ..in that it can sense the screen you're viewing it from and adapt acordingly. That's special.</p>
+			<p>In nerd-talk, this website is responsive, meaning the rows and columns that make up the pages will automatically begin re-aranging and dynamically stacking when the screen size sensed hits thresholds of 1200px, 992px, 768px, and 576px for standard mobile.</p>
+			<p>Resize the browser window to see the effect. Responsive web design has become more important as the amount of mobile traffic now accounts for the majority of total internet traffic.</p>
+			<a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" class="btn btn-outline-dark btn-lg">WHAT IS RESPONSIVE?</a>
+		</div>
+		<div class="col-lg-6">
+			<img src="img/responsive.png" alt="different devices and screens sizes displaying the same responsive website" class="img-fluid">
+		</div>
 	</div>
 </div>
-</div>
-
-<!--- grey breakline -->
-<hr class="my-4">
 
 <!--- Fixed background -->
 <figure>
@@ -258,16 +240,20 @@
 <!--- My Philosophy - Two Column Section -->
 <div class="container-fluid">
 	<div class="row padding">
-		<div class="col-lg-6">
-			<h2>My Philosophy</h2>
-			<p>I always keep in mind that the end user is a person looking at and operating a screen and nowadays that screen is likely to be on a mobile phone but it could also be any size screen or device ranging from mobile to tablet to desktop to 75inch loungeroom TV to 10m wide outdoor digital display. </p>
-			<p>I also keep in mind that people's attention is a valuable and hard-faught comodity so content needs to not only be easilly accessable, but it needs to capture and maintain their attention. Content needs to be compelling, easy to consume and as entertaining as possible while staying on point like a laser.</p>
-			<br>
-			
-		</div>
-		<div class="col-lg-6">
+		
+		<div class="center col-lg-6">
 			<img src="img/kanes-philosophy.png" alt="Kane's Philosophy" class="img-fluid">
 		</div>
+		<br>		
+	
+
+
+	</div>
+	<div class="center col-lg-6">
+		<h2 class= "center-txt">My Philosophy</h2>
+		<p>I always keep in mind that the end user is a person looking at and operating a screen and nowadays that screen is likely to be on a mobile phone but it could also be any size screen or device ranging from mobile to tablet to desktop to 75inch loungeroom TV to 10m wide outdoor digital display. </p>
+		<p>I also keep in mind that people's attention is a valuable and hard-faught comodity so content needs to not only be easilly accessable, but it needs to capture and maintain their attention. Content needs to be compelling, easy to consume and as entertaining as possible while staying on point like a laser.</p>
+		<br>			
 	</div>
 	<hr class="my-4">
 </div>
