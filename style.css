@@ -13,6 +13,8 @@
 /* video */
 
 
+
+
 html, body {
   height: 100%;
   width: 100%;
@@ -169,7 +171,7 @@ footer {
 }
 
 .fa-code, .fa-bold, .fa-css3 {
-  font-size: 4em;
+  font-size: 6em;
   margin: 1rem
 }
 
@@ -183,10 +185,38 @@ footer {
   max-width: 100%;
 }
 
-
 .social a {
-  font-size: 4.5em;
-  padding: 2rem;
+  font-size: 4em;
+  padding: 1.5rem;
+}
+
+.social-sml {
+  font-size: 5em;
+  padding: 1.25em;
+}
+
+.fa-reddit {
+  color: #FF4500
+  }
+
+.fa-skype {
+  color: #01AFF0
+  }
+
+.fa-linkedin {
+  color: #0077B4
+}
+
+.fa-pinterest {
+  color: #E50123
+}
+
+.fa-stack-overflow {
+  color: #F58732
+}
+
+.fa-github {
+  color: rgb(0, 0, 0)
 }
 
 .fa-facebook {
@@ -197,21 +227,22 @@ footer {
   color: #00aced
 }
 
-.fa-google-plus {
-  color: #dd4b39
-}
-
 .fa-instagram {
-  color: #517fa4
+  color: #E65155
 }
 
 .fa-youtube {
   color: #bb0000
 }
 
+.fa-stack-overflow:hover,
+.fa-linkedin:hover,
+.fa-pinterest:hover,
+.fa-skype:hover,
+.fa-reddit:hover,
+.fa-github:hover,
 .fa-facebook:hover,
 .fa-twitter:hover,
-.fa-google-plus-g:hover,
 .fa-instagram:hover,
 .fa-youtube:hover {
   color: #d5d5d5;
@@ -258,7 +289,10 @@ figure {
   will-change: transform;
 }
 
-
+.my-5 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 
 
 /*--- Bootstrap Padding Fix --*/
