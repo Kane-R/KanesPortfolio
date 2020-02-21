@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- HOME PAGE -->
+<!-- HOME PAGE: index.html
 
-<!-- Note - Consider/Check if head script/links need to be updated -->
-<!-- check netlify for hosting/deployment -->
+LATEST CHANGES: 2020-02-21
+1: For HOMEWORK BONUS - Added nested rows and columns in the "so whats so special?" section
+2: Fixed up code indentation and line-spaces on all html and css files
+3: Tidied up and added more notes & comments to html and css files for better readibility
 
-<!-- Edits: 2020-02-20 -->
-<!-- Change 1 : successfully 'mashed' BOX theme into Contact.html & Portfolio.html -->
-<!-- Change 2 : added video background as header -->
-<!-- Change 3 : ##################### -->
-<!-- Change 4 : ##################### -->
-<!-- Change 5 : ##################### -->
-<!-- Change 6 : ##################### -->
+NOTES:
+1: Check all items in <head> section – may need updating, some items could be removed
+2: Check all styles - consolidate and purge unused
+3: Slight inconsistency on nav bar between all pages
+4: Page load animation (“Preloader”) not working (works on contact.html and portfolio.html)
+5: Page-up icon which (should be on bottom right) not setup (works on contact.html and portfolio.html)
+6: Video file for header background very large (50MB)
+7: Add links to Footer and add/swap more useful info
+8: Nav Bar and Footer duplicated on all pages – reference common items to single source -->
 
 <head>
 	<meta charset="utf-8">
@@ -30,18 +34,20 @@
 <!-- ####################### START OF BODY ########################## -->
 <body>
 
-	<!-- Preloader -->
-	<div id="preloader">
+	<!-- Preloader (*NEEDS FIXING - css from css/style-btheme.css*) -->
+	<!-- <div id="preloader">
 		<div class="pre-container">
 			<div class="spinner">
 				<div class="double-bounce1"></div>
 				<div class="double-bounce2"></div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- end Preloader -->
 
-	<!--- Navigation -->
+	<!--- NOTE - for the HOMEWORK BONUS, I made the navbar sticky instead of the footer (a sticky footer will take up half the page!)-->
+
+	<!--- Navigation Bar-->
 	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"><img src="img/logo-black.png"></a>
@@ -63,7 +69,9 @@
 			</div>
 		</div>
 	</nav>
+	<!--- end Navigation Bar-->
 
+	<!--- Header with video background-->
 	<header>
 		<div class="overlay"></div>
 		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -78,45 +86,51 @@
 		</div>
 		</div>
 	</header>
+	<!--- end Header with video background-->
 	
-	<!--- Jumbotron "This portfolio website is my..." -->
-	<div class="container-fluid">
-	<div class="row Jumbotron">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-			<p class="lead text-center">as you can see from the awesome video background above<br/>I must be really good</p>
-		</div>	
-	</div>
-	<div class="col-sx-12 center-txt">
-		<h3>thanks goes to the sadists:</h3>
-		<p class="lead text-center">logic <strong>Luke</strong><br/>
-		don't use divs <strong>Eumir</strong><br/>
-		and shrcut <strong>Sam</strong><br/>
-		at<br/>
-		</p>
-		<a href="https://bootcamp.uwa.edu.au/coding/landing/?s=Google-Brand&pkw=uwa%20coding%20bootcamp&pcrid=385499530993&pmt=e&utm_source=google&utm_medium=cpc&utm_campaign=%5BS%5D_GRD_Coding_Brand_ALL_Exact&utm_term=uwa%20coding%20bootcamp&utm_content=385499530993&s=google&k=uwa%20coding%20bootcamp&gclid=EAIaIQobChMIlaLeoqDb5wIVRQ4rCh1fmQHtEAAYASAAEgI5ifD_BwE" target="_blank">
-		<button type="button" class="btn btn-outline-secondary btn-lg">UWA BOOTCAMP</button></a>
-	</div>
-	</div>
-	<!--- Jumbotron END -->
+	<!--- Jumbotron Row - comment under header and thanks to instructors -->
+	<section class="container-fluid">
+		<div class="row Jumbotron">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<p class="lead text-center">as you can see from the awesome video background above<br/>I must be really good</p>
+			</div>	
+		</div>
+		<div class="col-sx-12 center-txt">
+			<h3>thanks goes to the sadists:</h3>
+			<p class="lead text-center">logic <strong>Luke</strong><br/>
+			don't use divs <strong>Eumir</strong><br/>
+			and shrcut <strong>Sam</strong><br/>
+			at<br/>
+			</p>
+			<a href="https://bootcamp.uwa.edu.au/coding/landing/?s=Google-Brand&pkw=uwa%20coding%20bootcamp&pcrid=385499530993&pmt=e&utm_source=google&utm_medium=cpc&utm_campaign=%5BS%5D_GRD_Coding_Brand_ALL_Exact&utm_term=uwa%20coding%20bootcamp&utm_content=385499530993&s=google&k=uwa%20coding%20bootcamp&gclid=EAIaIQobChMIlaLeoqDb5wIVRQ4rCh1fmQHtEAAYASAAEgI5ifD_BwE" target="_blank">
+			<button type="button" class="btn btn-outline-secondary btn-lg">UWA BOOTCAMP</button></a>
+		</div>
+	</section>
+	<!--- end Jumbotron Row - comment under header and thanks to instructors -->
 
-	<!--- grey breakline -->
+	<!--- breakline -->
 	<hr class="light">
+	<!--- end breakline -->
 
 	<!--- Welcome Section -->
-	<div class="container-fluid padding">
-	<div class="row welcome text-center">
-		<div class="col-12">
-			<h1 class="display-4">built with ease<br/>..kind of</h1>
+	<!-- Welcome - heading & breakline -->
+	<section class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-4">built with ease<br/>..kind of</h1>
+			</div>			
+	<!-- breakline (styling added) -->
+			<hr>
+	<!-- end breakline (styling added) -->			
+			<div class="col-12">
+				<p class="lead">Welcome to my UWA Coding Bootcamp Portfolio. <br>So far, this website has been built on a Windows 10 machine (yeah yeah not cool, whatever) using VS Code, Bootstrap 4, CSS3, and Google Chrome, among other apps & tech.</p>
+			</div>
 		</div>
-		<hr>
-		<div class="col-12">
-			<p class="lead">Welcome to my UWA Coding Bootcamp Portfolio. <br>So far, this website has been built on a Windows 10 machine using VS Code, Bootstrap 4, CSS3, and Google Chrome, among other apps & tech.</p>
-		</div>
-	</div>
-	</div>
+	</section>
+	<!-- end Welcome - heading & breakline -->
 
-	<!--- Built with ease - Three Column Section -->
-	<div class="container-fluid padding">
+	<!--- Welcome - Three Column Section -->
+	<section class="container-fluid padding">
 		<div class="row text-center padding">
 			
 			<!--- HTML5 -->
@@ -139,70 +153,84 @@
 				<h3>CSS3</h3>
 				<p>built with the latest version - CSS3</p>
 			</div>
-		
 		</div>
-	</div>
+	</section>
+	<!--- end Welcome - Three Column Section -->
+	<!--- end Welcome Section -->
 
 	<!--- grey breakline -->
 	<hr class="my-4">
+	<!--- end grey breakline -->
 
-	<!--- So What's so special? - Two Column Section -->
-	<div class="container-fluid">
-		<div class="row padding">
-			<div class="center-vert col-lg-6">
+	<!--- So What's so special? - Nested rows and columns for HOMEWORK BONUS -->
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6 center-vert">
 				<h2>so what's so special?...</h2>
-				<p>This website is aliive! ..in that it can sense the screen you're viewing it from and adapt acordingly. That's special.</p>
+				<p>This website is aliive! ..in that it can sense the screen (and even the device) you're viewing it from and adapt acordingly. That's special.</p>
 				<p>In nerd-talk, this website is responsive, meaning the rows and columns that make up the pages will automatically begin re-aranging and dynamically stacking when the screen size sensed hits thresholds of 1200px, 992px, 768px, and 576px for standard mobile.</p>
 				<p>Resize the browser window to see the effect. Responsive web design has become more important as the amount of mobile traffic now accounts for the majority of total internet traffic.</p>
 				<a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" class="btn btn-outline-dark btn-lg">WHAT IS RESPONSIVE?</a>
 			</div>
-			<div class="col-lg-6">
-				<img src="img/responsive.png" alt="different devices and screens sizes displaying the same responsive website" class="img-fluid">
+        	<div class="col-sm-6">
+				<div class="row">
+					<div class="col-lg-12">
+						<img src="img/responsive-1.png" alt="different devices and screens sizes displaying the same responsive website" class="img-fluid">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<img src="img/responsive-2.png" alt="different devices and screens sizes displaying the same responsive website" class="img-fluid">
+					</div>
+					<div class="col-lg-6">
+						<img src="img/responsive-3.png" alt="different devices and screens sizes displaying the same responsive website" class="img-fluid">
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-
-	<!--- grey breakline -->
-	<hr class="my-4">
-
-	<!--- Fixed background -->
+	<!--- So What's so special? - Nested rows and columns for HOMEWORK BONUS -->
+	
+	<!--- fixed background - earth/sun/space -->
 	<figure>
 		<div class="fixed-wrap">
 			<div id="fixed">
 			</div>
 		</div>
 	</figure>
+	<!--- end fixed background - earth/sun/space -->
 
-	<!--- Meet the Many Me's - 3 Columns of cards and expandable summary button -->
-	<div class="container-fluid padding">
+	<!--- Meet the many me's Section - 3 Columns of cards and expandable summary button -->
+	<section class="container-fluid padding">
 		<div class="row welcome text-center">
 			<div class="col-12">
 				<h1 class="display-4">meet the many me's</h1>
 			</div>
-			<!--- Expandable SUMMARY Button - ManyMe's Summary (emoji gifs) -->
+			<!--- FUN! expandable SUMMARY Button - ManyMe's Summary (emoji gifs) -->
 			<button class="btn btn-outline-dark btn-lg" type="button" data-toggle="collapse" data-target="#emoji">SUMMARY</button>
 			<div id="emoji" class="collapse">
-			<div class="container-fluid" padding>
-			<div class="row text-center">
-				<div class="col-sm-6 col-md-3">
-					<img src="img/gif/panda.gif" alt="Panda gif" class="gif">
+				<div class="container-fluid" padding>
+					<div class="row text-center">
+						<div class="col-sm-6 col-md-3">
+							<img src="img/gif/panda.gif" alt="Panda gif" class="gif">
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<img src="img/gif/poo.gif" alt="Poo gif" class="gif">
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<img src="img/gif/unicorn.gif" alt="Unicorn gif" class="gif">
+						</div><div class="col-sm-6 col-md-3">
+							<img src="img/gif/chicken.gif" alt="Chicken gif" class="gif">
+						</div>
+					</div>
 				</div>
-				<div class="col-sm-6 col-md-3">
-					<img src="img/gif/poo.gif" alt="Poo gif" class="gif">
-				</div>
-				<div class="col-sm-6 col-md-3">
-					<img src="img/gif/unicorn.gif" alt="Unicorn gif" class="gif">
-				</div><div class="col-sm-6 col-md-3">
-					<img src="img/gif/chicken.gif" alt="Chicken gif" class="gif">
-				</div>
-			</div>
-			</div>
+			<!--- end FUN! expandable SUMMARY Button - ManyMe's Summary (emoji gifs) -->
 			</div>
 		</div>
-		</div>
-
-		<!--- many me Cards -->
-		<div class="container-fluid padding">
+	</section>
+	
+	<!--- many me Cards -->
+	<div class="container-fluid padding">
 		<div class="row padding">
 			
 			<!--- Multi-tasker -->
@@ -243,10 +271,10 @@
 					</div>
 				</div>
 			</div>
-		
 		</div>
 	</div>
-
+	<!--- end Meet the many me's Section - 3 Columns of cards and expandable summary button -->
+	
 	<!--- My Philosophy - Two Column Section -->
 	<div class="container-fluid">
 		
@@ -264,77 +292,75 @@
 			<br>			
 		
 		</div>
-		<hr class="my-4">
+	<hr class="my-4">
 	</div>
+	<!--- end My Philosophy - Two Column Section -->
 
 	<!--- Connect - social links -->
 	<div class="container-fluid padding">
-	<div class="row text-center padding">
-		<div class="col-12">
-			<h2>Connect via my socials</h2>
-		</div>
-		<div class="col-12 social padding">
-			<a href="https://www.linkedin.com/in/kane-robinson-viz360/" target="_blank"><i class="fab fa-linkedin"></i></a>
-			<a href="https://www.pinterest.com.au/kanerobinson/" target="_blank"><i class="fab fa-pinterest"></i></a>
-			<a href="https://join.skype.com/invite/mElW5OztV7tv" target="_blank"><i class="fab fa-skype"></i></a>
-			<a href="https://www.reddit.com/user/KanesTrades" target="_blank"><i class="fab fa-reddit"></i></a>
-			<a href="https://github.com/Kane-R" target="_blank"><i class="fab fa-github"></i></a>
-			<a href="https://www.facebook.com/Kano180" target="_blank"><i class="fab fa-facebook"></i></a>
-			<a href="https://stackoverflow.com/users/12858291/kane-r" target="_blank"><i class="fab fa-stack-overflow"></i></a>	
-			<a href="https://twitter.com/KaneTRobinson" target="_blank"><i class="fab fa-twitter"></i></a>
-			<a href="https://www.instagram.com/maxbigwood/" target="_blank"><i class="fab fa-instagram"></i></a>
-			<a href="https://www.youtube.com/channel/UCCF-gusfO7Zjwh2B2TAjqGQ" target="_blank"><i class="fab fa-youtube"></i></a>
+		<div class="row text-center padding">
+			<div class="col-12">
+				<h2>Connect via my socials</h2>
+			</div>
+			<div class="col-12 social padding">
+				<a href="https://www.linkedin.com/in/kane-robinson-viz360/" target="_blank"><i class="fab fa-linkedin"></i></a>
+				<a href="https://www.pinterest.com.au/kanerobinson/" target="_blank"><i class="fab fa-pinterest"></i></a>
+				<a href="https://join.skype.com/invite/mElW5OztV7tv" target="_blank"><i class="fab fa-skype"></i></a>
+				<a href="https://www.reddit.com/user/KanesTrades" target="_blank"><i class="fab fa-reddit"></i></a>
+				<a href="https://github.com/Kane-R" target="_blank"><i class="fab fa-github"></i></a>
+				<a href="https://www.facebook.com/Kano180" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://stackoverflow.com/users/12858291/kane-r" target="_blank"><i class="fab fa-stack-overflow"></i></a>	
+				<a href="https://twitter.com/KaneTRobinson" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.instagram.com/maxbigwood/" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.youtube.com/channel/UCCF-gusfO7Zjwh2B2TAjqGQ" target="_blank"><i class="fab fa-youtube"></i></a>
+			</div>
 		</div>
 	</div>
-	</div>
+	<!--- end Connect - social links -->
 
 	<!--- Footer -->
 	<footer>
-	<div class="container-fluid padding">
-	<div class="row text-center">
-		
-		<div class="col-md-4">
-			<img src="img/logo-footer-black.png" alt="Kanes Portfolio Logo for Dark Background">
-			<hr class="light">
-			<p>0433-788-333</p>
-			<p>Kane@KanesTrades.com</p>
-			<p>3 Elm St</p>
-			<p>Springwood, Ihio, 4003</p>
+		<div class="container-fluid padding">
+			<div class="row text-center">
+				
+				<div class="col-md-4">
+					<img src="img/logo-footer-black.png" alt="Kanes Portfolio Logo for Dark Background">
+					<hr class="light">
+					<p>0433-788-333</p>
+					<p>Kane@KanesTrades.com</p>
+					<p>3 Elm St</p>
+					<p>Springwood, Ihio, 4003</p>
+				</div>
+				
+				<div class="col-md-4">
+					<hr class="light">
+					<h5>when<strong> I'M </strong>responsive</h5>
+					<hr class="light">
+					<p>Monday: 11am to 5pm</p>
+					<p>Tues-Fri: 9am to 5pm</p>
+					<p>Saturday: 11am to 2pm</p>
+					<p>Sunday: 1pm to 2pm</p>
+				</div>
+				
+				<div class="col-md-4">
+					<hr class="light">
+					<h5>congratulations!</h5>
+					<hr class="light">
+					<p>You Have</p>
+					<p>Just About</p>
+					<p>Finished Reading</p>
+					<p>My Entire Portfolio Page!</p>
+				</div>
+				<!--- very bottom Copyright section -->
+				<div class="col-12">
+					<hr class="light">
+					<h5>&copy; KanesTrades.com</h5>
+				</div>
+				<!--- end very bottom Copyright section -->
+			</div>
 		</div>
-		
-		<div class="col-md-4">
-			<hr class="light">
-			<h5>when<strong> I'M </strong>responsive</h5>
-			<hr class="light">
-			<p>Monday: 11am to 5pm</p>
-			<p>Tues-Fri: 9am to 5pm</p>
-			<p>Saturday: 11am to 2pm</p>
-			<p>Sunday: 1pm to 2pm</p>
-		</div>
-		
-		<div class="col-md-4">
-			<hr class="light">
-			<h5>congratulations!</h5>
-			<hr class="light">
-			<p>You Have</p>
-			<p>Just About</p>
-			<p>Finished Reading</p>
-			<p>My Entire Homepage!</p>
-		</div>
-		
-		<!-- footer-bottom Copyright -->
-		<div class="col-12">
-			<hr class="light">
-			<h5>&copy; KanesTrades.com</h5>
-		</div>
-	
-	</div>
-	</div>
 	</footer>
-	
+	<!--- end Footer -->
 </body>
 <!-- ####################### END OF BODY ########################## -->
 </html>
-
-
-

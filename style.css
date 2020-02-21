@@ -1,7 +1,14 @@
+/* PRIMARY CSS - style.css */
+
+/* NOTES:
+1. Media Queries - more checking and optimisation required (site not rendering properly on some MB phones)
+2. Secondary CSS (css/style-btheme.css) needs to be cleaned and incorporated into this primary CSS file
+2. Consolidate CSS where possible
+3. Purge unused styles and other unused content */
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
-
-
+/* this needs cleaning up - for index.html header section */
 @media (pointer: coarse) and (hover: none) {
   header {
     background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
@@ -10,10 +17,13 @@
     display: none;
   }
 }
-/* video */
 
-
-
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
 
 html, body {
   height: 100%;
@@ -248,8 +258,6 @@ footer {
   color: #d5d5d5;
 }
 
-
-
 /*---Firefox Bug Fix --*/
 .carousel-item {
   transition: -webkit-transform 0.5s ease;
@@ -311,7 +319,6 @@ figure {
 @media (max-width: 576px) {
 
 }
-
 
 /*
 Extra small (xs) devices (portrait phones, less than 576px)

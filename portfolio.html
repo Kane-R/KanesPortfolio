@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- PORTFOLIO PAGE -->
+<!-- PORTFOLIO PAGE: portfolio.html
+
+LATEST CHANGES: 2020-02-21
+1: Fixed up code indentation and line-spaces on all html and css files
+2: Tidied up and added more notes & comments to html and css files for better readibility
+
+NOTES:
+1: Placeholder images in portfolio section
+3: Need to create landing page design for portfolio items 
+2: Check all items in <head> section – may need updating, some items could be removed
+3: Check all styles - consolidate and purge unused
+4: Slight inconsistency on nav bar between all pages
+5: Add links to Footer and add/swap more useful info
+6: Nav Bar and Footer duplicated on all pages – reference common items to single source
+7: Page-up icon (bottom right) not displaying correctly (looks correct on contact.hml)
+7: Check/tidy items applicable to the b theme (under footer section) -->
 
 <head>    
     <title>Kanes Portfolio</title>
@@ -10,7 +25,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-btheme.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -80,15 +95,16 @@
 
                 <!-- portfolio_container -->
                 <div class="no-padding portfolio_container clearfix">
+                    
                     <!-- single work -->
-                    <div class="col-md-4 col-sm-6  fashion logo">
+                    <div class="col-md-4 col-sm-6">
                         <a href="single-project.html" class="portfolio_item">
-                            <img src="img2/portfolio/01.jpg" alt="image" class="img-responsive" />
+                            <img src="img/inClass-1000.jpg" alt="image of coding-wannabe-lemmings in class" class="portfolio-img"/>
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>Mockups in seconds</span>
-                                        <em>Fashion / Logo</em>
+                                        <span>LEARNING IS FUN!</span>
+                                        <em>INACTIVE BUTTON</em>
                                     </div>
                                 </div>
                             </div>
@@ -97,14 +113,14 @@
                     <!-- end single work -->
 
                     <!-- single work -->
-                    <div class="col-md-4 col-sm-6 ads graphics">
+                    <div class="col-md-4 col-sm-6">
                         <a href="single-project.html" class="portfolio_item">
-                            <img src="img2/portfolio/03.jpg" alt="image" class="img-responsive" />
+                            <img src="img/boom-1000.jpg" alt="image of cartoon head exploding" class="portfolio-img"/>
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>Floating mockups</span>
-                                        <em>Ads / Graphics</em>
+                                        <span>LEARNING CAN BE HARD!</span>
+                                        <em>INACTIVE BUTTON</em>
                                     </div>
                                 </div>
                             </div>
@@ -115,12 +131,12 @@
                     <!-- single work -->
                     <div class="col-md-4 col-sm-12 photography">
                         <a href="single-project.html" class="portfolio_item">
-                            <img src="img2/portfolio/02.jpg" alt="image" class="img-responsive" />
+                            <img src="img/darkHTML-1000.jpg" alt="img of html on computer screen" class="portfolio-img" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>Photorealistic smartwatch</span>
-                                        <em>Photography</em>
+                                        <span>MAKE IT PRETTY WITH CSS!</span>
+                                        <em>INACTIVE BUTTON</em>
                                     </div>
                                 </div>
                             </div>
@@ -131,12 +147,12 @@
                     <!-- single work -->
                     <div class="col-md-4 col-sm-6 fashion ads">
                         <a href="single-project.html" class="portfolio_item">
-                            <img src="img2/portfolio/04.jpg" alt="image" class="img-responsive" />
+                            <img src="img/heavyHead-1000.jpg" alt="img of head being squashed by rock" class="portfolio-img" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>Held by hands</span>
-                                        <em>Fashion / Ads</em>
+                                        <span>PRESSURE TO LEARN FASTER!</span>
+                                        <em>INACTIVE BUTTON</em>
                                     </div>
                                 </div>
                             </div>
@@ -147,12 +163,12 @@
                     <!-- single work -->
                     <div class="col-md-4 col-sm-6 graphics ads">
                         <a href="single-project.html" class="portfolio_item">
-                            <img src="img2/portfolio/05.jpg" alt="image" class="img-responsive" />
+                            <img src="img/theWizzard-1000.jpg" alt="image" class="portfolio-img" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>Mobile devices</span>
-                                        <em>Graphics / Ads</em>
+                                        <span>I WAN'T TO BE A CODING WIZZARD!</span>
+                                        <em>INACTIVE BUTTON</em>
                                     </div>
                                 </div>
                             </div>
@@ -163,12 +179,12 @@
                     <!-- single work -->
                     <div class="col-md-4 col-sm-12 photography">
                         <a href="single-project.html" class="portfolio_item">
-                            <img src="img2/portfolio/010.jpg" alt="image" class="img-responsive" />
+                            <img src="img/wireMan-1000.jpg" alt="image" class="portfolio-img" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>Photorealistic smartwatch</span>
-                                        <em>Photography</em>
+                                        <span>I CAN SEE THE MATRIX!</span>
+                                        <em>INACTIVE BUTTON</em>
                                     </div>
                                 </div>
                             </div>
@@ -179,12 +195,12 @@
                     <!-- single work -->
                     <div class="col-md-4 col-sm-6 graphics ads">
                         <a href="single-project.html" class="portfolio_item">
-                            <img src="img2/portfolio/06.jpg" alt="image" class="img-responsive" />
+                            <img src="img/yay-1000.jpg" alt="image" class="portfolio-img" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>Mobile devices</span>
-                                        <em>Graphics / Ads</em>
+                                        <span>WAHOO I FINISHED THE NAV BAR!</span>
+                                        <em>INACTIVE BUTTON</em>
                                     </div>
                                 </div>
                             </div>
@@ -195,12 +211,12 @@
                     <!-- single work -->
                     <div class="col-md-4 col-sm-6 graphics ads">
                         <a href="single-project.html" class="portfolio_item">
-                            <img src="img2/portfolio/07.jpg" alt="image" class="img-responsive" />
+                            <img src="img/friendlySupport.jpg" alt="image" class="portfolio-img" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>Mobile devices</span>
-                                        <em>Graphics / Ads</em>
+                                        <span>FRIENDLY SUPPORT!</span>
+                                        <em>INACTIVE BUTTON</em>
                                     </div>
                                 </div>
                             </div>
@@ -211,12 +227,12 @@
                     <!-- single work -->
                     <div class="col-md-4 col-sm-6 graphics ads">
                         <a href="single-project.html" class="portfolio_item">
-                            <img src="img2/portfolio/08.jpg" alt="image" class="img-responsive" />
+                            <img src="img/upHill-1000.jpg" alt="img of pushing big rock uphill" class="portfolio-img" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>Mobile devices</span>
-                                        <em>Graphics / Ads</em>
+                                        <span>MORE HARD WORK REQUIRED!</span>
+                                        <em>INACTIVE BUTTON</em>
                                     </div>
                                 </div>
                             </div>
@@ -272,15 +288,14 @@
     </footer>
     <!-- end footer -->
 
+    <!-- ITEMS APPLICABLE TO B-THEME -->
 
     <!-- back to top -->
     <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
     <!-- end back to top -->
 
-
     <!-- jQuery -->
     <script src="js/jquery-2.1.1.js"></script>
-
 
     <!--  plugins -->
     <script src="js/bootstrap.min.js"></script>
@@ -288,11 +303,9 @@
     <script src="js/animated-headline.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
 
-
     <!--  custom script -->
     <script src="js/custom.js"></script>
     
-
     <!-- google analytics  -->
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -310,7 +323,7 @@
         ga('create', 'UA-76796224-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <!-- end ITEMS APPLICABLE TO B-THEME -->
 
 </body>
-
 </html>
