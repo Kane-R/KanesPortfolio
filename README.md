@@ -1,7 +1,7 @@
 # KanesPortfolio
 Responsive and constantly evolving portfolio website built by and featuring the work of Kane Robinson.
 
-KanesTrades.com
+http://kanestrades.com
 
 NOTES: (applicable to whole project):
 1. Codebase and file/folder data & structure requires 'cleaning' and consolidation as many assets copied in from 3x themes, copied snippets containing stylesheet references, etc
